@@ -1,4 +1,12 @@
 #!/usr/bin/env bash
 
-#docker build --platform linux/x86_64 -t ghcr.io/sleepdeprecation/mastodon:latest ./
-docker buildx build -t ghcr.io/sleepdeprecation/mastodon:latest ./
+set +x +e
+
+TODAY=$(date +%Y-%m-%d)
+REPO="ghcr.io/sleepdeprecation/mastodon"
+
+docker buildx build -t "${REPO}:${TODAY}" ./
+
+docker tag "${REPO}:${TODAY}" "${REPO}:latest"
+
+docker push --all-tags "${REPO}"
