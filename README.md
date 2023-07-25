@@ -1,3 +1,9 @@
+# Sleep's Glitch Mastodon
+
+Tweaks to the glitch-soc edition of mastodon for my instance.
+
+Incorporates [Tangerine UI](https://github.com/nileane/TangerineUI-for-Mastodon) by Niléane Dorffer, licensed under the MIT license
+
 # Mastodon Glitch Edition
 
 [![Ruby Testing](https://github.com/glitch-soc/mastodon/actions/workflows/test-ruby.yml/badge.svg)](https://github.com/glitch-soc/mastodon/actions/workflows/test-ruby.yml)
