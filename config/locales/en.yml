@@ -1151,7 +1151,7 @@ en:
       title: Login to %{domain}
     sign_up:
       manual_review: Thank you for your interest in joining %{domain}. Because this is a personal server meant for people I know and like, please let me know who you are/how I know you.
-      preamble: Please note that %{domain} is a personal server, mainly for friends of @sleep. If we don't know each other it is highly unlikely that I will approve your registration.
+      preamble: Please note that this is a personal server, mainly for friends of @sleep. If we don't know each other it is highly unlikely that I will approve your registration.
       title: Let's get you set up on %{domain}.
     status:
       account_status: Account status
