@@ -1150,8 +1150,8 @@ en:
       preamble_html: Login with your <strong>%{domain}</strong> credentials. If your account is hosted on a different server, you will not be able to log in here.
       title: Login to %{domain}
     sign_up:
-      manual_review: Sign-ups on %{domain} go through manual review by our moderators. To help us process your registration, write a bit about yourself and why you want an account on %{domain}.
-      preamble: With an account on this Mastodon server, you'll be able to follow any other person on the network, regardless of where their account is hosted.
+      manual_review: Thank you for your interest in joining %{domain}. Because this is a personal server meant for people I know and like, please let me know who you are/how I know you.
+      preamble: Please note that %{domain} is a personal server, mainly for friends of @sleep. If we don't know each other it is highly unlikely that I will approve your registration.
       title: Let's get you set up on %{domain}.
     status:
       account_status: Account status
