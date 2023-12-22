@@ -5,7 +5,6 @@
     https://github.com/nileane/TangerineUI-for-Mastodon/
 
     by @nileane@nileane.fr
-    with minor modifications by @sleep@fslurs.gay
 
     Compatible with: Mastodon v4.3.0 ✅
 */
@@ -300,7 +299,7 @@ body.app-body  {
 }
 
 .app-body .account__avatar img {
-    border-radius: 10%;
+    border-radius: 50%;
 }
 
 /* Rordered layout */
@@ -1836,6 +1835,11 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     border: 1px solid var(--color-lines);
 }
 
+.app-body div:not(.detailed-status) > .media-gallery:has(.media-gallery__item.standalone) {
+    max-height: 500px;
+    width: auto;
+}
+
 /* 📊 Polls */
 .app-body .poll__chart,
 .app-body .muted .poll__chart.leading {
@@ -1897,7 +1901,6 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     color: transparent;
     pointer-events: none;
 }
-
 
 
 /* Empty columns */
@@ -2757,7 +2760,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     border: 0;
 }
 .app-body .account__header__bar .avatar .account__avatar {
-    border-radius: 10%;
+    border-radius: 50%;
     border-width: 5px;
     width: 100px !important;
     height: 100px !important;
@@ -3022,12 +3025,12 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 }
 .app-body .account-card__title__avatar .account__avatar {
     border: 0;
-    border-radius: 10%;
+    border-radius: 50%;
     overflow: visible;
 }
 .app-body .account-card__title__avatar img {
     border: 0;
-    border-radius: 10%;
+    border-radius: 50%;
     box-shadow: 0 0 0 3px var(--color-content-bg);
 }
 .app-body .account-card__title .display-name bdi,
@@ -3862,10 +3865,28 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     border-color: var(--color-content-secondary-separator);
 }
 
+.app-body .privacy-dropdown__dropdown {
+    background-color: var(--color-content-bg);
+    border-radius: 8px;
+    border: 1px solid var(--color-lines);
+}
+.app-body .privacy-dropdown :is(.privacy-dropdown__value, .privacy-dropdown__value),
+.app-body .privacy-dropdown__option {
+    background-color: var(--color-content-bg);
+    color: var(--color-content-fg);
+}
 .app-body .privacy-dropdown.active :is(.privacy-dropdown__value, .privacy-dropdown__value.active),
 .app-body .privacy-dropdown__option:is(.active, .active:hover, :hover) {
     background-color: var(--color-accent);
     color: var(--color-accent-fg);
+}
+.app-body .privacy-dropdown.active .privacy-dropdown__value:has(.text-icon-button.active) {
+    border-radius: 6px 6px 0 0;
+}
+.app-body .privacy-dropdown__option .privacy-dropdown__option__content,
+.app-body .privacy-dropdown__option .privacy-dropdown__option__content strong {
+    background-color: var(--color-content-bg);
+    color: var(--color-content-fg);
 }
 .app-body .privacy-dropdown__option.active .privacy-dropdown__option__content,
 .app-body .privacy-dropdown__option.active .privacy-dropdown__option__content strong,
@@ -4259,11 +4280,11 @@ a:is(.active,
 
 .app-body .onboarding__profile .app-form__avatar-input {
     border-color: var(--color-content-bg);
-    border-radius: 10%;
+    border-radius: 50%;
     border-width: 5px;
 }
 .app-body .onboarding__profile .app-form__avatar-input img {
-    border-radius: 10%;
+    border-radius: 50%;
     background: var(--color-content-secondary-bg);
 }
 .app-body .onboarding__profile .app-form__header-input img {
